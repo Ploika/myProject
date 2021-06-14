@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="header">
+    <h2>{{movie.original_title}}</h2>
+  </div>
+  <div class="img_details"><img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" alt="image"></div>
+  <div class="current_content">
+    <div><p>Data release: {{movie.release_date}}</p></div>
+    <div><p>{{movie.overview}}</p></div>
+    <div><p>Popularity: {{movie.popularity}}</p></div>
+    <div><p>Language: {{movie.original_language}}</p></div>
+    <div class="stars">
+      <div><app-stars-rating></app-stars-rating></div>
+      <div><p>Vote average: {{movie.vote_average}}</p></div>
+    </div>
+  </div>
+</div>

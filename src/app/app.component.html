@@ -1,0 +1,24 @@
+<div class=main>
+  <div class="header">
+    <div class="left_header">
+      <p class="home_img"><a [routerLink]="['home']"><img  src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="png image"></a></p>
+    </div>
+    <div class="center_header">
+    </div>
+    <div class="right_header">
+      <app-user-info></app-user-info>
+    </div>
+  </div>
+  <div class="poster_preview">
+    <app-posters-preview></app-posters-preview>
+  </div>
+  <div class="left_bar">
+    <ul>
+      <li><a [routerLink]="['movies']">All movies</a></li>
+      <li><app-genres></app-genres></li>
+    </ul>
+  </div>
+  <div class="right_bar">
+    <router-outlet></router-outlet>
+  </div>
+</div>

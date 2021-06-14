@@ -1,0 +1,14 @@
+.main_info{
+  display: flex;
+  text-align: right;
+}
+.user_name{
+  padding-top: 15px;
+  margin-right: 5px;
+}
+.user_image img{
+  border-radius: 40%;
+  width: 70px;
+  height: 70px;
+}
+

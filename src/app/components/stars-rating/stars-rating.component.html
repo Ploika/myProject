@@ -1,0 +1,6 @@
+<ngb-rating [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0" [readonly]="readonly"></ngb-rating>
+<pre>
+<span *ngIf="selected">Selected: <b>{{selected}}</b></span>
+
+</pre>
+

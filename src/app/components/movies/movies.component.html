@@ -1,0 +1,8 @@
+<div class="main">
+  <div class="right_bar">
+    <app-movie *ngFor="let movie of movies" [movie]='movie'></app-movie>
+    <div class="pagination">
+      <ngb-pagination [collectionSize]="70" pageSize="7" [(page)]="page"  aria-label="Default pagination" (pageChange)="pageChange($event)"></ngb-pagination>
+    </div>
+  </div>
+</div>

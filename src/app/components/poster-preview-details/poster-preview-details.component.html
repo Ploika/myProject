@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="header">
+    <h2>{{poster.original_title}}</h2>
+  </div>
+
+  <div class="img_details"><img src="https://image.tmdb.org/t/p/original{{poster.poster_path}}" alt="image"></div>
+  <div class="current_content">
+    <div><p>Data release: {{poster.release_date}}</p></div>
+    <div><p>{{poster.overview}}</p></div>
+    <div><p>Popularity: {{poster.popularity}}</p></div>
+    <div><p>Language: {{poster.original_language}}</p></div>
+    <div class="stars">
+      <div><app-stars-rating></app-stars-rating></div>
+      <div><p>Vote average: {{poster.vote_average}}</p></div>
+    </div>
+  </div>
+</div>
